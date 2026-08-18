@@ -10,13 +10,27 @@
 <body class="spot">
   <header class="topo"><div class="topo-conteudo"><div class="marca-linha"><a class="marca" href="https://quantimportbrazil.github.io/"><img src="https://quantimportbrazil.github.io/quantimport-assets/assets/brand/logo.png" alt="Logotipo QuantImport"><span>QuantImport</span></a><nav class="navegacao" aria-label="Navegação principal"><a href="/">Início</a></nav></div><h1>Movimentos recentes dos preços considerados</h1></div></header>
   <main>
-    <p class="spot-intro">As previsões da QuantImport consideram movimentos de preços relacionados ao comércio agrícola. O gráfico abaixo ilustra uma visão geral dos últimos 12 meses dos dados utilizados.</p>
+    <p class="spot-intro">As previsões da QuantImport consideram movimentos de preços relacionados ao comércio agrícola.</p>
     <p class="spot-scale" aria-label="Escala de valores relativos"><span class="spot-gradient" aria-hidden="true"></span>Menor valor relativo 0 — 1 Maior valor relativo</p>
-    <figure class="spot-figure"><img class="spot-chart" src="precos-spot.svg" alt="Gráfico de linhas dos movimentos relativos dos preços considerados nos últimos 12 meses"></figure>
+    <section class="spot-grid" id="spot-grid" aria-label="Gráficos dos movimentos recentes dos preços considerados"></section>
     <a class="link-voltar" href="/sobre/fatores-considerados/outros-fatores/">← Voltar</a>
   </main>
   <footer><div class="rodape-conteudo"><p>QuantImport · <a href="mailto:andre.bueno@quantimport.com.br">andre.bueno@quantimport.com.br</a> · Rio de Janeiro, Brasil · <a href="/sobre/privacidade.html">Política de Privacidade</a></p></div></footer>
   <div class="consentimento" id="consentimento" role="dialog" aria-label="Consentimento de cookies" hidden><p>Usamos ferramentas de análise para melhorar o site. Você pode aceitar ou recusar.</p><div class="consentimento-acoes"><button type="button" data-consent="aceito">Aceitar análise</button><button class="recusar" type="button" data-consent="recusado">Recusar</button><a href="/sobre/privacidade.html">Política de Privacidade</a></div></div>
+  <script src="precos-spot.js"></script>
+  <script>
+    const grid = document.getElementById('spot-grid');
+    window.PRECOS_SPOT.series.forEach(({ src, name }) => {
+      const figure = document.createElement('figure');
+      figure.className = 'spot-figure';
+      const image = document.createElement('img');
+      image.className = 'spot-chart';
+      image.src = src;
+      image.alt = `Movimentos relativos de ${name} nos últimos 12 meses`;
+      figure.append(image);
+      grid.append(figure);
+    });
+  </script>
   <script src="/sobre/fatores-considerados/consentimento.js"></script>
 </body>
 </html>
