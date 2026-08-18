@@ -6,3 +6,4 @@ body{min-height:100vh;display:flex;flex-direction:column}.clima main{flex:1}.map
 .spot h1{font-size:clamp(2rem,4vw,3rem)}
 .spot-gradient{display:inline-block;width:150px;height:9px;margin-right:8px;vertical-align:middle;border:1px solid var(--borda);background:linear-gradient(90deg,#146b45,#801f39)}
 .spot-intro{font-size:1.05rem}
+.historico main{padding:14px 0 18px}.historico-intro{margin:0 0 8px;font-size:1.05rem}.historico-figure{margin:0 0 8px;padding:8px;background:#fff;border:1px solid var(--borda);border-radius:6px}.historico-chart{display:block;width:100%;height:auto}.historico .link-voltar{margin-top:0}@media(max-width:680px){.historico main{padding:20px 0 28px}.historico-intro{font-size:1rem}.historico-figure{padding:4px}}
