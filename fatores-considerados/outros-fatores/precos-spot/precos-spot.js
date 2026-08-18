@@ -1,0 +1,1 @@
+window.PRECOS_SPOT = {"src": "precos-spot.svg", "periods": ["mai/2025", "jun/2025", "jul/2025", "ago/2025", "set/2025", "out/2025", "nov/2025", "dez/2025", "jan/2026", "fev/2026", "mar/2026", "abr/2026"], "series": ["DAP", "MOP", "Urea", "Café", "Milho", "Gás natural", "Petróleo", "Potássio", "Soja", "Açúcar", "Índice USD"]};
