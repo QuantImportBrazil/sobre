@@ -3,5 +3,6 @@
 body{min-height:100vh;display:flex;flex-direction:column}.clima main{flex:1}.mapas img{height:auto;aspect-ratio:260/220}
 .gradiente{background:linear-gradient(90deg,#b58b34 0%,#b58b34 33%,#0052b4 50%,#0052b4 66%,#7b2cbf 100%)}
 .spot main{padding:14px 0 18px}.spot-intro{margin:0 0 8px;font-size:.9rem}.spot-scale{margin:0 0 6px;color:var(--texto-suave);font-size:.85rem}.spot-figure{margin:0 0 8px;padding:8px;background:#fff;border:1px solid var(--borda);border-radius:6px}.spot-chart{display:block;width:100%;height:auto;max-height:390px}.spot .link-voltar{margin-top:0}@media(max-width:680px){.spot main{padding:20px 0 28px}.spot-intro{font-size:1rem}.spot-figure{padding:4px}.spot-chart{width:100%;max-width:100%;height:auto}}
-.spot h1{font-size:clamp(2rem,4vw,3rem)}.spot-chart{max-height:320px}
+.spot h1{font-size:clamp(2rem,4vw,3rem)}.spot-chart{height:250px;max-height:none;object-fit:fill}
 .spot-gradient{display:inline-block;width:150px;height:9px;margin-right:8px;vertical-align:middle;border:1px solid var(--borda);background:linear-gradient(90deg,#146b45,#801f39)}
+.spot-intro{font-size:1.05rem}.spot-chart{height:250px;max-height:none}
