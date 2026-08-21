@@ -3,17 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Fatores considerados pelo QuantImport.">
+  <meta name="description" content="Fatores considerados e significado de recorte na QuantImport.">
   <title>Fatores considerados | QuantImport</title>
   <link rel="stylesheet" href="/sobre/fatores-considerados/estilo.css">
 </head>
 <body>
   <header class="topo"><div class="topo-conteudo"><div class="marca-linha"><a class="marca" href="https://quantimportbrazil.github.io/"><img src="https://quantimportbrazil.github.io/quantimport-assets/assets/brand/logo.png" alt="Logotipo QuantImport"><span>QuantImport</span></a><nav class="navegacao" aria-label="Navegação principal"><a href="/">Início</a></nav></div><h1>Fatores considerados</h1></div></header>
   <main>
-    <div class="grade duas">
-      <a class="cartao-link" href="/sobre/fatores-considerados/historico-da-variavel-prevista/"><span>Histórico da variável prevista</span><span class="seta" aria-hidden="true">→</span></a>
-      <a class="cartao-link" href="/sobre/fatores-considerados/outros-fatores/"><span>Outros fatores</span><span class="seta" aria-hidden="true">→</span></a>
-    </div>
+    <section class="recorte-conteudo" aria-labelledby="titulo-recorte">
+      <h2 id="titulo-recorte">O que significa “recorte”</h2>
+      <p>Na QuantImport, <strong>recorte</strong> é a combinação de informações que determina o objeto de uma previsão.</p>
+      <p>A única informação obrigatória é a <strong>data de corte dos dados</strong>. As demais dimensões tornam a previsão progressivamente mais específica.</p>
+
+      <aside class="recorte-base" aria-labelledby="titulo-recorte-base">
+        <h3 id="titulo-recorte-base">Quando apenas a data de corte é definida</h3>
+        <p>O total dos 12 meses seguintes, considerando todos os produtos processados pela QuantImport e todo o Brasil, sem detalhamento por UF, município, complexo ou país.</p>
+      </aside>
+
+      <p class="recorte-nota">O total Brasil é produzido diretamente pelo agrupamento dos dados-base, sem definição de UF ou município. Não corresponde à soma de previsões nacionais, estaduais e municipais.</p>
+
+      <h3>Estrutura de um recorte</h3>
+      <p class="estrutura-recorte" aria-label="Data de corte, agrupamento temporal, produto, geografia principal, complexo e país">
+        <span>data de corte</span><span aria-hidden="true">/</span><span>agrupamento temporal</span><span aria-hidden="true">/</span><span>produto</span><span aria-hidden="true">/</span><span>geografia principal</span><span aria-hidden="true">/</span><span>complexo</span><span aria-hidden="true">/</span><span>país</span>
+      </p>
+
+      <table class="quadro-recorte">
+        <thead><tr><th scope="col">Dimensão</th><th scope="col">Definição</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Data de corte</th><td>Dados disponíveis no momento em que a previsão é produzida. É a única dimensão obrigatória.</td></tr>
+          <tr><th scope="row">Agrupamento temporal</th><td>Os 12 meses seguintes podem ser apresentados em conjunto ou divididos em períodos menores, como semestres, trimestres ou meses.</td></tr>
+          <tr><th scope="row">Produto</th><td>Quando não especificado, considera todos os produtos processados pela QuantImport. Pode identificar um grupo ou um produto específico.</td></tr>
+          <tr><th scope="row">Geografia principal</th><td>Quando não especificada, considera todo o Brasil diretamente nos dados-base. Pode identificar uma UF ou um município.</td></tr>
+          <tr><th scope="row">Complexo</th><td>Detalhamento adicional, quando aplicável.</td></tr>
+          <tr><th scope="row">País</th><td>Detalhamento adicional, quando aplicável.</td></tr>
+          <tr><th scope="row">Fluxo comercial</th><td>Importação ou exportação, definido de acordo com o produto analisado.</td></tr>
+        </tbody>
+      </table>
+
+      <p class="recorte-resumo">A data de corte é obrigatória. As demais dimensões podem ser especificadas para tornar a previsão progressivamente mais detalhada. Quando não são especificadas, a QuantImport considera sua abrangência máxima.</p>
+
+      <section class="recorte-exemplo" aria-labelledby="titulo-exemplo-recorte">
+        <h3 id="titulo-exemplo-recorte">Exemplo real nos dados atuais</h3>
+        <p>Um dos recortes disponíveis com o maior número de dimensões preenchidas é:</p>
+        <dl>
+          <div><dt>Data de corte</dt><dd>Abril de 2026</dd></div>
+          <div><dt>Agrupamento temporal</dt><dd>Quatro trimestres, cobrindo os 12 meses seguintes</dd></div>
+          <div><dt>Produto</dt><dd>Grupo NP, NK e PK</dd></div>
+          <div><dt>Geografia principal</dt><dd>Município de Paranaguá (PR)</dd></div>
+          <div><dt>Fluxo comercial</dt><dd>Importação, em decorrência do grupo de produtos analisado</dd></div>
+        </dl>
+        <p class="fluxo-observacao">Nesse exemplo, importação é uma característica decorrente do produto, não uma escolha independente do recorte.</p>
+      </section>
+    </section>
+
+    <section class="fatores-links" aria-labelledby="titulo-fatores">
+      <h2 id="titulo-fatores">Fatores considerados pela previsão</h2>
+      <div class="grade duas">
+        <a class="cartao-link" href="/sobre/fatores-considerados/historico-da-variavel-prevista/"><span>Histórico da variável prevista</span><span class="seta" aria-hidden="true">→</span></a>
+        <a class="cartao-link" href="/sobre/fatores-considerados/outros-fatores/"><span>Outros fatores</span><span class="seta" aria-hidden="true">→</span></a>
+      </div>
+    </section>
     <a class="link-voltar" href="/sobre/">← Voltar</a>
   </main>
   <footer><div class="rodape-conteudo"><p>QuantImport · <a href="mailto:andre.bueno@quantimport.com.br">andre.bueno@quantimport.com.br</a> · Rio de Janeiro, Brasil · <a href="/sobre/privacidade.html">Política de Privacidade</a></p></div></footer>
