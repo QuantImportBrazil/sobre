@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sobre a QuantImport e seus canais de contato.">
+  <meta name="theme-color" content="#146b45">
+  <title>Sobre | QuantImport</title>
+  <style>
+    :root {
+      --verde: #146b45; --verde-escuro: #0d4931; --dourado: #c8a52b;
+      --texto: #20262d; --texto-suave: #667085; --borda: #e3e8e5;
+      --fundo: #f4f7f5; --branco: #ffffff; --largura: 1180px;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--texto); background: var(--fundo);
+      font-family: Arial, Helvetica, sans-serif; line-height: 1.5; }
+    a { color: inherit; }
+    .topo { color: var(--branco); background: linear-gradient(110deg, var(--verde-escuro), var(--verde));
+      border-bottom: 4px solid var(--dourado); }
+    .topo-conteudo, main, .rodape-conteudo { width: min(var(--largura), calc(100% - 48px)); margin-inline: auto; }
+    .topo-conteudo { padding: 22px 0 28px; }
+    .marca-linha { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .marca { display: inline-flex; align-items: center; gap: 12px; color: var(--branco);
+      text-decoration: none; font-size: 1.45rem; font-weight: 700; }
+    .marca img { display: block; width: 46px; height: 46px; object-fit: contain; border-radius: 50%; }
+    .navegacao { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 20px; }
+    .navegacao a { color: var(--branco); text-underline-offset: 4px; }
+    .identificacao { margin-top: 28px; }
+    .identificacao h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 4rem); line-height: 1; }
+    .identificacao p { margin: 10px 0 0; color: #e6f2eb; }
+    main { padding: 26px 0 48px; }
+    .conteudo { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+    .cartao { padding: 24px; background: var(--branco); border: 1px solid var(--borda);
+      border-radius: 10px; box-shadow: 0 4px 16px rgba(16,24,40,.06); }
+    .cartao h2 { margin: 0 0 10px; color: var(--verde-escuro); font-size: 1.3rem; }
+    .cartao p { margin: 0; }
+    .cartao ul { margin: 12px 0 0; padding-left: 22px; }
+    .cartao li + li { margin-top: 6px; }
+    .cartao a { color: var(--verde); font-weight: 700; text-underline-offset: 4px;
+      overflow-wrap: anywhere; }
+    .cartao .link-discreto { display: inline-block; margin-top: 10px; font-size: .9rem; font-weight: 400; }
+    .cartao a:hover, .cartao a:focus-visible { color: var(--verde-escuro); }
+    footer { color: var(--texto-suave); background: var(--branco); border-top: 1px solid var(--borda); }
+    .rodape-conteudo { display: flex; justify-content: space-between; gap: 20px;
+      padding: 24px 0; font-size: .92rem; }
+    .rodape-conteudo p { margin: 0; }
+    .consentimento { position: fixed; right: 20px; bottom: 20px; z-index: 10; width: min(420px, calc(100% - 40px)); padding: 18px;
+      color: var(--texto); background: var(--branco); border: 1px solid var(--borda); border-radius: 10px; box-shadow: 0 8px 28px rgba(16,24,40,.16); }
+    .consentimento p { margin: 0 0 12px; font-size: .92rem; }
+    .consentimento a { color: var(--verde-escuro); }
+    .consentimento-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .consentimento button { padding: 8px 12px; color: var(--branco); background: var(--verde); border: 0; border-radius: 6px; cursor: pointer; font-weight: 700; }
+    .consentimento button.recusar { color: var(--verde-escuro); background: transparent; border: 1px solid var(--borda); }
+    @media (max-width: 680px) {
+      .topo-conteudo, main, .rodape-conteudo { width: min(100% - 24px, var(--largura)); }
+      .marca-linha, .rodape-conteudo { align-items: flex-start; flex-direction: column; }
+      .navegacao { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topo">
+    <div class="topo-conteudo">
+      <div class="marca-linha">
+        <a class="marca" href="https://quantimportbrazil.github.io/">
+          <img src="https://quantimportbrazil.github.io/quantimport-assets/assets/brand/logo.png" alt="Logotipo QuantImport">
+          <span>QuantImport</span>
+        </a>
+        <nav class="navegacao" aria-label="Navegação principal">
+          <a href="/">Início</a>
+        </nav>
+      </div>
+      <div class="identificacao">
+        <h1>Sobre a QuantImport</h1>
+        <p>Inteligência para o Agronegócio</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="conteudo">
+      <section class="cartao">
+        <h2>O que faz</h2>
+        <p>Previsões sobre comércio exterior.</p>
+      </section>
+
+      <section class="cartao">
+        <h2>Como faz</h2>
+        <p>Considera múltiplos fatores em cada previsão.</p>
+        <a class="link-discreto" href="https://quantimportbrazil.github.io/pages/dados-utilizados/">Ver os fatores considerados ↗</a>
+      </section>
+
+      <section class="cartao">
+        <h2>O que entrega</h2>
+        <p>Previsões em gráficos, acompanhadas de testes retrospectivos e medidas de confiabilidade.</p>
+        <a class="link-discreto" href="/pages/">Ver publicações ↗</a>
+      </section>
+
+      <section class="cartao">
+        <h2>Responsável</h2>
+        <p>Agrônomo e Cientista de Dados.</p>
+        <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="andre-coutinho-bueno" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/andre-coutinho-bueno?trk=profile-badge">André Bueno</a></div>
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="rodape-conteudo">
+      <p>QuantImport · <a href="mailto:andre.bueno@quantimport.com.br">andre.bueno@quantimport.com.br</a> · Rio de Janeiro, Brasil · <a href="https://quantimportbrazil.github.io/sobre/privacidade.html">Política de Privacidade</a></p>
+    </div>
+  </footer>
+  <div class="consentimento" id="consentimento" role="dialog" aria-label="Consentimento de cookies" hidden>
+    <p>Usamos ferramentas de análise para melhorar o site. Você pode aceitar ou recusar.</p>
+    <div class="consentimento-acoes"><button type="button" data-consent="aceito">Aceitar análise</button><button class="recusar" type="button" data-consent="recusado">Recusar</button><a href="privacidade.html">Política de Privacidade</a></div>
+  </div>
+  <script>
+    (function () {
+      var chave = 'quantimport-consentimento-analise';
+      function carregarAnalise() {
+        if (window.gtag) return;
+        var google = document.createElement('script'); google.async = true; google.src = 'https://www.googletagmanager.com/gtag/js?id=G-RGQQTYYPKV'; document.head.appendChild(google);
+        window.dataLayer = window.dataLayer || []; window.gtag = function () { dataLayer.push(arguments); }; window.gtag('js', new Date()); window.gtag('config', 'G-RGQQTYYPKV');
+        window.clarity = window.clarity || function () { (window.clarity.q = window.clarity.q || []).push(arguments); };
+        var clarity = document.createElement('script'); clarity.async = true; clarity.src = 'https://www.clarity.ms/tag/y0pygl507e'; document.head.appendChild(clarity);
+      }
+      function definirConsentimento(valor) { localStorage.setItem(chave, valor); document.getElementById('consentimento').hidden = true; if (valor === 'aceito') carregarAnalise(); }
+      var escolha = localStorage.getItem(chave); var banner = document.getElementById('consentimento');
+      if (escolha === 'aceito') carregarAnalise(); else if (!escolha) banner.hidden = false;
+      document.querySelectorAll('[data-consent]').forEach(function (botao) { botao.addEventListener('click', function () { definirConsentimento(botao.dataset.consent); }); });
+    }());
+  </script>
+</body>
+</html>
